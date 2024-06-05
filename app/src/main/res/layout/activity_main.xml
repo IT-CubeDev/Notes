@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff7b0"
+    android:padding="10dp"
+    tools:context="ru.squarecircle.notes.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notes"
+        android:text="Заметки"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"
+        android:layout_above="@id/addNewNote"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/notes"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Создать заметку"
+        android:id="@+id/addNewNote"
+        android:textColor="#fff7b0"
+        android:backgroundTint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
